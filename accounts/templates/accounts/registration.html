@@ -1,0 +1,58 @@
+{% extends 'mainapp/base.html' %}
+{% block content %}
+
+ <div class="login-popup-wrapper">
+      <div class="login-popup-container">
+          <div class="login-popup-title">Вхід в особистий кабінет</div>
+          <form class="login-form" method="post" >
+                  {% csrf_token %}
+          <div class="field ">
+            <div class="input-area">
+              {{ form.email }}
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">{{ form.non_field_errors }}</div>
+          </div>
+              <div class="field ">
+            <div class="input-area">
+              {{ form.first_name }}
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">{{ form.non_field_errors }}</div>
+          </div>
+              <div class="field ">
+            <div class="input-area">
+              {{ form.last_name }}
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">{{ form.non_field_errors }}</div>
+          </div>
+              <div class="field ">
+            <div class="input-area">
+              {{ form.phone }}
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">{{ form.non_field_errors }}</div>
+          </div>
+              <div class="field ">
+            <div class="input-area">
+              {{ form.password }}
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">{{ form.non_field_errors }}</div>
+          </div>
+              <div class="field ">
+            <div class="input-area">
+              {{ form.confirm_password }}
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">{{ form.non_field_errors }}</div>
+          </div>
+
+          <input type="submit" value="Зарегеструватись">
+        </form>
+        <div class="sign-txt"><a href="{% url 'login' %}">Я вже зареєстрований</a></div>
+      </div>
+  </div>
+
+{% endblock %}

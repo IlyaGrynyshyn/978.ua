@@ -1,0 +1,44 @@
+{% extends 'mainapp/base.html' %}
+{% block content %}
+    <div class="product-detail__container" style="max-width: 1240px; margin: 0 auto">
+    <nav aria-label="breadcrumb" class="mt-5">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'main_page' %}">Главная</a></li>
+        <li class="breadcrumb-item"><a href="{{ product.category.get_absolute_url }}">{{ product.category.name }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ product.title }}</li>
+      </ol>
+    </nav>
+<div class="row container">
+    <div class="col-md-4">
+        <img src="{{ product.img.url }}" class="img-fluid">
+    </div>
+    <div class="col-md-8">
+        <h3>{{ product.title }}</h3>
+        <p>Цена: {{ product.title }} руб.</p>
+        <p>Описание: {{ product.description }}</p>
+        <hr>
+        <a href="#"><button class="btn btn-danger">Добавить в корзину</button></a>
+    </div>
+    <div class="mt-5 col-md-5">
+        <form action="{% url "cart:cart_add" product.id %}" method="post">
+            {% csrf_token %}
+            {{ cart_product_form }}
+            <input type="submit" class="buy-now btn btn-sm btn-primary" value="Add to cart">
+        </form>
+    </div>
+    <p class="mt-4">Характеристики:</p>
+<!--    <table class="table">-->
+<!--      <tbody>-->
+<!--      {% for f_name, f_value in product.get_features.items %}-->
+<!--        <tr>-->
+<!--          <th scope="row">{{ f_name }}</th>-->
+<!--          <td>{{ f_value }}</td>-->
+<!--        </tr>-->
+<!--      {% endfor %}-->
+<!--      </tbody>-->
+    </table>
+</div>
+
+    </div>
+
+{% endblock content %}

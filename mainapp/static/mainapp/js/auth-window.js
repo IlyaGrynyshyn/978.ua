@@ -1,0 +1,1 @@
+const popuplink = document.querySelectorAll('.popup-link')

@@ -1,0 +1,49 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+{#        <div class="login-form">#}
+{#            <div class="container">#}
+{#                <form class="_container" style="max-width: 400px; margin: 0 auto">#}
+{#                     {% csrf_token %}#}
+{#                    <div class="form-error">{{ form.non_field_errors }}</div>#}
+{#                    {% for f in form %}#}
+{#                    <p><label class="form-label" for="{{ f.id_for_label }}" >{{ f.placeholder }}:</label>{{ f }}</p>#}
+{#                    <div class="form-error">{{ f.errors }}</div>#}
+{#                    {% endfor %}#}
+{#                    <button type="submit" class="btn btn-danger">Ввійти</button>#}
+{#                </form>#}
+{#            </div>#}
+{#        </div>#}
+{#<!-- Coding By CodingNepal - youtube.com/codingnepal -->#}
+ <div class="login-popup-wrapper">
+      <div class="login-popup-container">
+          <div class="login-popup-title">Вхід в особистий кабінет</div>
+          <form class="login-form" method="post">
+              {% csrf_token %}
+          <div class="field email">
+            <div class="input-area">
+              {{ form.email }}
+              <i class="icon fas fa-envelope"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">{{ form.non_field_errors }}</div>
+          </div>
+          <div class="field password">
+            <div class="input-area">
+                {{ form.password }}
+              <i class="icon fas fa-lock"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Поле не може бути порожнє</div>
+          </div>
+          <div class="pass-txt"><a href="#">Забув пароль?</a></div>
+          <input type="submit" value="Вхід">
+        </form>
+        <div class="sign-txt">Не маєш акаунта? <a href="{% url 'registration' %}">Зареєструватися.</a></div>
+      </div>
+  </div>
+
+
+{%  endblock %}

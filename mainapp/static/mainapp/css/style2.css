@@ -1,0 +1,130 @@
+/*body {*/
+/*    height: 100%;*/
+/*}*/
+
+/*.wrapper {*/
+/*    min-height: 100%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.content {*/
+/*    flex: 1 1 auto;*/
+/*}*/
+
+/*.dropbtn {*/
+/*    background-color: #303030;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.show {*/
+/*    display: block;*/
+/*}*/
+
+/*.dropbtn:hover, .dropbtn:focus {*/
+/*    background-color: #303030;*/
+/*}*/
+
+/*.dropbtn {*/
+/*    float: right;*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.dropdown-content {*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    background-color: #f1f1f1;*/
+/*    min-width: 160px;*/
+/*    overflow: auto;*/
+/*    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+/*    right: 0;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*.dropdown-content a {*/
+/*    color: black;*/
+/*    padding: 12px 16px;*/
+/*    text-decoration: none;*/
+/*    display: block;*/
+/*}*/
+
+/*.dropbtn-profile a:hover {*/
+/*    background-color: #ddd;*/
+/*}*/
+
+/*.show {*/
+/*    display: block;*/
+/*}*/
+
+/*.pagination {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    padding: 30px 0;*/
+/*}*/
+
+/*.pagination ul {*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    background: #fff;*/
+/*    padding: 8px;*/
+/*    border-radius: 50px;*/
+/*    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*.pagination ul li {*/
+/*    color: #D41B1B;*/
+/*    list-style: none;*/
+/*    line-height: 45px;*/
+/*    text-align: center;*/
+/*    font-size: 18px;*/
+/*    font-weight: 500;*/
+/*    cursor: pointer;*/
+/*    user-select: none;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*.pagination ul li.numb {*/
+/*    list-style: none;*/
+/*    height: 45px;*/
+/*    width: 45px;*/
+/*    margin: 0 3px;*/
+/*    line-height: 45px;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.pagination ul li.numb.first {*/
+/*    margin: 0px 3px 0 -5px;*/
+/*}*/
+
+/*.pagination ul li.numb.last {*/
+/*    margin: 0px -5px 0 3px;*/
+/*}*/
+
+/*.pagination ul li.dots {*/
+/*    font-size: 22px;*/
+/*    cursor: default;*/
+/*}*/
+
+/*.pagination ul li.btn {*/
+/*    padding: 0 20px;*/
+/*    border-radius: 50px;*/
+/*}*/
+
+/*.pagination li.active,*/
+/*.pagination ul li.numb:hover,*/
+/*.pagination ul li:first-child:hover,*/
+/*.pagination ul li:last-child:hover {*/
+/*    color: #fff;*/
+/*    background: #D41B1B;*/
+/*}*/
+
+/*.login-form {*/
+/*    flex: 1 1 auto;*/
+/*    margin: 0 auto;*/
+/*    padding: 5%;*/
+/*}*/
+

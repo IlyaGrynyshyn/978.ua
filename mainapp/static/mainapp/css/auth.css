@@ -1,0 +1,145 @@
+
+.login-form{
+    flex: 1 1 auto;
+    margin:0 auto;
+    padding: 5%;
+}
+
+.login-popup-wrapper{
+  width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  padding: 100px;
+}
+::selection{
+  color: #fff;
+  background: #D41B1B;
+}
+.login-popup-container{
+    position: relative;
+  margin: 0 auto;
+      width: 380px;
+      padding: 0px 30px 50px 30px;
+      background: #fff;
+      border-radius: 5px;
+      text-align: center;
+}
+.login-popup-title{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.login-popup-container form{
+  margin: 20px 0 40px 0;
+}
+.login-form .field{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+.login-form  .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+.login-form  input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #D41B1B;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+.login-form  .field input:focus,
+.login-form  .field.valid input{
+  border-color: #D41B1B;
+}
+.login-form  .field.shake input,
+.login-form  .field.error input{
+  border-color: #dc3545;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #dc3545;
+}
+.login-form  input:focus ~ .icon,
+.login-form  .field.valid .icon{
+  color: #D41B1B;
+}
+.login-form  .field.shake input:focus ~ .icon,
+.login-form  .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+.login-form  input::placeholder{
+  color: #bfbfbf;
+  font-size: 17px;
+}
+.login-form  .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+.login-form  .field .error{
+  display: none;
+}
+.login-form  .field.shake .error,
+.login-form  .field.error .error{
+  display: block;
+}
+.login-form  .pass-txt{
+  text-align: left;
+  margin-top: -5px;
+}
+.login-popup-container a{
+  color: #D41B1B;
+  text-decoration: none;
+}
+.login-popup-container a:hover{
+  text-decoration: underline;
+}
+.login-form  input[type="submit"]{
+  height: 50px;
+  margin: 20px 0 -30px 0;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #D41B1B;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.login-form  input[type="submit"]:hover{
+  background: #D41B1B;
+}
